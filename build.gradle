@@ -39,6 +39,13 @@ dependencies {
 	implementation 'com.amazonaws:aws-java-sdk-s3'
 }
 
+task copyYML(type: Copy){
+	copy{
+		from './JOLJOL_Photo_Event_yml'
+		include "*.yml"
+		into './src/main/resources'
+	}
+}
 tasks.named('test') {
 	useJUnitPlatform()
 }
