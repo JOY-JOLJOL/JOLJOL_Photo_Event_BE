@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: photobooth-be
+  profiles:
+    include: s3
